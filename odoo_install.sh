@@ -249,9 +249,14 @@ say "8. Instalando requirements de Odoo ${OE_VERSION} ..."
 
 # pip moderno (Ubuntu >= 23.04) exige --break-system-packages por PEP-668;
 # pip viejo (Ubuntu 18.04/20.04) no conoce esa opción.
-PIP_FLAGS=""
+#
+# --ignore-installed: pip no puede DESINSTALAR paquetes que instaló apt
+# (no traen RECORD; ej. cryptography en Ubuntu 24.04 con Odoo 19) y sin
+# esta opción aborta con "Cannot uninstall X, RECORD file not found".
+# Con ella instala su versión en /usr/local, que tiene prioridad.
+PIP_FLAGS="--ignore-installed"
 if pip3 install --help 2>/dev/null | grep -q "break-system-packages"; then
-  PIP_FLAGS="--break-system-packages"
+  PIP_FLAGS="${PIP_FLAGS} --break-system-packages"
 fi
 
 # Los requirements oficiales se toman del árbol clonado: así corresponden
