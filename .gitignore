@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs locales / dumps de pruebas
+*.log
+*.log.*
+*.dump
+*.sql.gz
+*.tar.gz
+
+# Variables de entorno con secretos
+.env
+.env.*
+!.env.example

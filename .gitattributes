@@ -1,0 +1,3 @@
+# Los .sh se ejecutan en Linux: siempre LF, aunque el checkout sea en Windows.
+# (Con CRLF bash falla con errores tipo "\r: command not found".)
+*.sh text eol=lf

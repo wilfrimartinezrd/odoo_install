@@ -1,0 +1,16 @@
+# =============================================================================
+#  requirements.txt - Overload Solutions / odoo_install
+#
+#  SOLO los extras de Overload. Los requirements oficiales de Odoo ya NO se
+#  duplican aqui: el script los instala desde el arbol clonado
+#  (/odooNN/odooNN-server/requirements.txt), asi siempre corresponden
+#  exactamente a la version elegida con OE_VERSION (12.0 ... 19.0).
+#
+#  Estos paquetes faltan en el oficial y sin ellos Odoo da errores de
+#  assets/CSS y fallan algunos imports.
+# =============================================================================
+
+beautifulsoup4
+numpy
+xmltodict
+pycountry
