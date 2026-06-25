@@ -1,7 +1,7 @@
 # Odoo Script de Instalación
 
-Script para instalar **Odoo base (Community + Enterprise)** sobre Ubuntu,
-de la **12.0 a la 19.0** según la variable `OE_VERSION`.
+Script para instalar **Odoo Community** sobre Ubuntu, de la **12.0 a la
+19.0** según la variable `OE_VERSION`.
 
 El servidor queda con Odoo "limpio": las localizaciones y los addons
 custom **no** se instalan aquí — se cargan después como paso separado.
@@ -36,11 +36,6 @@ sudo OE_VERSION=12.0 ./odoo_install.sh   # Odoo 12
 ```
 
 Al terminar, Odoo queda escuchando en `http://<IP>:8069`.
-
-> **Enterprise**: por defecto `IS_ENTERPRISE=True`, lo que requiere que la
-> clave SSH de root tenga acceso a `git@github.com:odoo/enterprise.git`
-> (acceso de partner). Para instalar solo Community:
-> `sudo IS_ENTERPRISE=False ./odoo_install.sh`
 
 ---
 
