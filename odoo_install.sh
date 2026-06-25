@@ -1,4 +1,7 @@
 #!/bin/bash
+# Odoo Community installer (12.0 - 19.0)
+# Wilfri Martinez <wmartinez@overloadsolutions.com.do>
+# Soporte, localizacion y modulos a medida.
 
 set -e
 

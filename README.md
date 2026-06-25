@@ -65,3 +65,12 @@ Es importante usar la versión correcta de Ubuntu: cada versión de Odoo
 solo funciona con ciertas versiones de Python, y el script **verifica la
 compatibilidad y aborta** si el Python del sistema no corresponde a la
 `OE_VERSION` pedida (se puede forzar con `SKIP_PY_CHECK=True`).
+
+---
+
+## ¿Necesitas más?
+
+Este script instala Odoo Community base. Si buscas **soporte, localización,
+migraciones o módulos a medida**, escríbeme:
+
+**Wilfri Martinez** — [wmartinez@overloadsolutions.com.do](mailto:wmartinez@overloadsolutions.com.do)
